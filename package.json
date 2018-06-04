@@ -1,0 +1,53 @@
+{
+  "name": "todo-list",
+  "author": "Robert Gulewicz <robert@gulewi.cz> (http://gulewi.cz)",
+  "license": "MIT",
+  "jest": {
+    "verbose": true
+  },
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.1",
+    "babel-jest": "^22.1.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-react-display-name": "^2.0.0",
+    "babel-plugin-react-transform": "^3.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-react-hmre": "^1.1.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^0.28.9",
+    "eslint-plugin-class-property": "^1.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.0.6",
+    "react-transform-hmr": "^1.0.4",
+    "redux-devtools-extension": "^2.13.2",
+    "style-loader": "^0.19.1",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.0",
+    "webpack-merge": "^4.1.2"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --config webpack.dev.js --history-api-fallback --hot --inline",
+    "test": "jest --silent",
+    "test:watch": "jest --watch --noStackTrace",
+    "build": "webpack --config webpack.prod.js"
+  }
+}
